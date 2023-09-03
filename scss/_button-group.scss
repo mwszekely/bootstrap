@@ -14,11 +14,16 @@
   // the borders properly
   > .btn-check:checked + .btn,
   > .btn-check:focus + .btn,
-  > .btn:hover,
   > .btn:focus,
   > .btn:active,
   > .btn.active {
     z-index: 1;
+  }
+
+  @media (hover: hover) {
+    .btn:hover {
+      z-index: 1;
+    }
   }
 }
 

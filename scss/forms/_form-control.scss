@@ -107,8 +107,10 @@
     @include transition($btn-transition);
   }
 
-  &:hover:not(:disabled):not([readonly])::file-selector-button {
-    background-color: $form-file-button-hover-bg;
+  @media (hover: hover) {
+    &:hover:not(:disabled):not([readonly])::file-selector-button {
+      background-color: $form-file-button-hover-bg;
+    }
   }
 }
 

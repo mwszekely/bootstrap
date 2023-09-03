@@ -11,11 +11,18 @@
   }
 
   &:focus,
-  &:hover,
-  :hover > &,
   :target > & {
     color: $link-color;
     text-decoration: none;
     opacity: 1;
+  }
+
+  @media (hover: hover) {
+    &:hover,
+    :hover > & {
+      color: $link-color;
+      text-decoration: none;
+      opacity: 1;
+    }
   }
 }

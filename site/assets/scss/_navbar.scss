@@ -41,8 +41,10 @@
     color: $white;
     @include transition(transform .2s ease-in-out);
 
-    &:hover {
-      transform: rotate(-5deg) scale(1.1);
+    @media (hover: hover) {
+      &:hover {
+        transform: rotate(-5deg) scale(1.1);
+      }
     }
   }
 
@@ -52,9 +54,14 @@
     padding-left: $spacer * .25;
     color: rgba($white, .85);
 
-    &:hover,
     &:focus {
       color: $white;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        color: $white;
+      }
     }
 
     &.active {

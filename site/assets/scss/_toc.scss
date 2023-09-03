@@ -30,10 +30,16 @@
       text-decoration: none;
       border-left: .125rem solid transparent;
 
-      &:hover,
       &.active {
         color: var(--bd-toc-color);
         border-left-color: var(--bd-toc-color);
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          color: var(--bd-toc-color);
+          border-left-color: var(--bd-toc-color);
+        }
       }
 
       &.active {
@@ -61,13 +67,20 @@
     border: 1px solid var(--bs-border-color);
     @include border-radius(var(--bs-border-radius));
 
-    &:hover,
     &:focus,
     &:active,
     &[aria-expanded="true"] {
       color: var(--bd-violet);
       background-color: var(--bs-body-bg);
       border-color: var(--bd-violet);
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        color: var(--bd-violet);
+        background-color: var(--bs-body-bg);
+        border-color: var(--bd-violet);
+      }
     }
 
     &:focus,

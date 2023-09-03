@@ -129,9 +129,14 @@
 .bd-summary-link {
   color: var(--bs-link-color);
 
-  &:hover,
   details[open] > & {
     color: var(--bs-link-hover-color);
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--bs-link-hover-color);
+    }
   }
 }
 // stylelint-enable selector-no-qualifying-type

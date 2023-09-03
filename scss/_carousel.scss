@@ -104,12 +104,20 @@
   @include transition($carousel-control-transition);
 
   // Hover/focus state
-  &:hover,
   &:focus {
     color: $carousel-control-color;
     text-decoration: none;
     outline: 0;
     opacity: $carousel-control-hover-opacity;
+  }
+  
+  @media (hover: hover) {
+    &:hover {
+      color: $carousel-control-color;
+      text-decoration: none;
+      outline: 0;
+      opacity: $carousel-control-hover-opacity;
+    }
   }
 }
 .carousel-control-prev {

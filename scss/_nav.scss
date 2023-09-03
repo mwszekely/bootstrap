@@ -32,10 +32,16 @@
   border: 0;
   @include transition($nav-link-transition);
 
-  &:hover,
   &:focus {
     color: var(--#{$prefix}nav-link-hover-color);
     text-decoration: if($link-hover-decoration == underline, none, null);
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--#{$prefix}nav-link-hover-color);
+      text-decoration: if($link-hover-decoration == underline, none, null);
+    }
   }
 
   &:focus-visible {
@@ -74,11 +80,18 @@
     border: var(--#{$prefix}nav-tabs-border-width) solid transparent;
     @include border-top-radius(var(--#{$prefix}nav-tabs-border-radius));
 
-    &:hover,
     &:focus {
       // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
       isolation: isolate;
       border-color: var(--#{$prefix}nav-tabs-link-hover-border-color);
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
+        isolation: isolate;
+        border-color: var(--#{$prefix}nav-tabs-link-hover-border-color);
+      }
     }
   }
 
@@ -139,10 +152,15 @@
     padding-left: 0;
     border-bottom: var(--#{$prefix}nav-underline-border-width) solid transparent;
 
-    &:hover,
     &:focus {
       border-bottom-color: currentcolor;
     }
+
+    @media (hover: hover) {
+      &:hover {
+        border-bottom-color: currentcolor;
+      }
+  }
   }
 
   .nav-link.active,

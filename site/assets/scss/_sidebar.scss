@@ -50,12 +50,19 @@
   color: var(--bs-body-color);
   text-decoration: if($link-decoration == none, null, none);
 
-  &:hover,
   &:focus,
   &.active {
     color: var(--bs-emphasis-color);
     text-decoration: if($link-hover-decoration == underline, none, null);
     background-color: var(--bd-sidebar-link-bg);
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--bs-emphasis-color);
+      text-decoration: if($link-hover-decoration == underline, none, null);
+      background-color: var(--bd-sidebar-link-bg);
+    }
   }
 
   &.active {

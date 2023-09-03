@@ -68,8 +68,10 @@
     @include transition(var(--#{$prefix}accordion-btn-icon-transition));
   }
 
-  &:hover {
-    z-index: 2;
+  @media (hover: hover) {
+    &:hover {
+      z-index: 2;
+    }
   }
 
   &:focus {

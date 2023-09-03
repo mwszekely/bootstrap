@@ -90,8 +90,10 @@
 }
 
 .card-link {
-  &:hover {
-    text-decoration: if($link-hover-decoration == underline, none, null);
+  @media (hover: hover) {
+    &:hover {
+      text-decoration: if($link-hover-decoration == underline, none, null);
+    }
   }
 
   + .card-link {

@@ -37,12 +37,14 @@
   border: var(--#{$prefix}pagination-border-width) solid var(--#{$prefix}pagination-border-color);
   @include transition($pagination-transition);
 
-  &:hover {
-    z-index: 2;
-    color: var(--#{$prefix}pagination-hover-color);
-    text-decoration: if($link-hover-decoration == underline, none, null);
-    background-color: var(--#{$prefix}pagination-hover-bg);
-    border-color: var(--#{$prefix}pagination-hover-border-color);
+  @media (hover: hover) {
+    &:hover {
+      z-index: 2;
+      color: var(--#{$prefix}pagination-hover-color);
+      text-decoration: if($link-hover-decoration == underline, none, null);
+      background-color: var(--#{$prefix}pagination-hover-bg);
+      border-color: var(--#{$prefix}pagination-hover-border-color);
+    }
   }
 
   &:focus {

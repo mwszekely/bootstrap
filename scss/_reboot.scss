@@ -244,9 +244,11 @@ a {
   color: rgba(var(--#{$prefix}link-color-rgb), var(--#{$prefix}link-opacity, 1));
   text-decoration: $link-decoration;
 
-  &:hover {
-    --#{$prefix}link-color-rgb: var(--#{$prefix}link-hover-color-rgb);
-    text-decoration: $link-hover-decoration;
+  @media (hover: hover) {
+    &:hover {
+      --#{$prefix}link-color-rgb: var(--#{$prefix}link-hover-color-rgb);
+      text-decoration: $link-hover-decoration;
+    }
   }
 }
 
@@ -256,10 +258,16 @@ a {
 // See https://github.com/twbs/bootstrap/issues/19402
 
 a:not([href]):not([class]) {
-  &,
-  &:hover {
+  & {
     color: inherit;
     text-decoration: none;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: inherit;
+      text-decoration: none;
+    }
   }
 }
 

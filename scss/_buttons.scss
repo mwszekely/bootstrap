@@ -47,11 +47,13 @@
     border-color: var(--#{$prefix}btn-hover-border-color);
   }
 
-  .btn-check + &:hover {
-    // override for the checkbox/radio buttons
-    color: var(--#{$prefix}btn-color);
-    background-color: var(--#{$prefix}btn-bg);
-    border-color: var(--#{$prefix}btn-border-color);
+  @media (hover: hover) {
+    .btn-check + &:hover {
+      // override for the checkbox/radio buttons
+      color: var(--#{$prefix}btn-color);
+      background-color: var(--#{$prefix}btn-bg);
+      border-color: var(--#{$prefix}btn-border-color);
+    }
   }
 
   &:focus-visible {
@@ -177,17 +179,16 @@
     background-image: none;
   }
 
-  &:hover,
   &:focus-visible {
     text-decoration: $link-hover-decoration;
-  }
-
-  &:focus-visible {
     color: var(--#{$prefix}btn-color);
   }
 
-  &:hover {
-    color: var(--#{$prefix}btn-hover-color);
+  @media (hover: hover) {
+    &:hover {
+      color: var(--#{$prefix}btn-hover-color);
+      text-decoration: $link-hover-decoration;
+    }
   }
 
   // No need for an active state here

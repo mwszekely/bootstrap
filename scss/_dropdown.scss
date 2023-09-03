@@ -186,11 +186,18 @@
   border: 0; // For `<button>`s
   @include border-radius(var(--#{$prefix}dropdown-item-border-radius, 0));
 
-  &:hover,
   &:focus {
     color: var(--#{$prefix}dropdown-link-hover-color);
     text-decoration: if($link-hover-decoration == underline, none, null);
     @include gradient-bg(var(--#{$prefix}dropdown-link-hover-bg));
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--#{$prefix}dropdown-link-hover-color);
+      text-decoration: if($link-hover-decoration == underline, none, null);
+      @include gradient-bg(var(--#{$prefix}dropdown-link-hover-bg));
+    }
   }
 
   &.active,

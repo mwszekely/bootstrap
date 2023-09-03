@@ -54,12 +54,20 @@
   text-align: inherit; // For `<button>`s (anchors inherit)
 
   // Hover state
-  &:hover,
   &:focus {
-    z-index: 1; // Place hover/focus items above their siblings for proper border styling
+    z-index: 1; // Place focus items above their siblings for proper border styling
     color: var(--#{$prefix}list-group-action-hover-color);
     text-decoration: none;
     background-color: var(--#{$prefix}list-group-action-hover-bg);
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      z-index: 1; // Same as focus
+      color: var(--#{$prefix}list-group-action-hover-color);
+      text-decoration: none;
+      background-color: var(--#{$prefix}list-group-action-hover-bg);
+    }
   }
 
   &:active {

@@ -189,8 +189,10 @@ $enable-important-utilities: false;
             padding: 1rem;
           }
 
-          .padding-1rem-hover:hover {
-            padding: 1rem;
+          @media (hover: hover) {
+            .padding-1rem-hover:hover {
+              padding: 1rem;
+            }
           }
 
           .padding-1rem-focus:focus {
@@ -281,8 +283,10 @@ $enable-important-utilities: false;
             --bs-padding: 1rem;
           }
 
-          .padding-1rem-hover:hover {
-            --bs-padding: 1rem;
+          @media (hover: hover) {
+            .padding-1rem-hover:hover {
+              --bs-padding: 1rem;
+            }
           }
 
           .padding-1rem-focus:focus {

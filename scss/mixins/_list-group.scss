@@ -9,10 +9,16 @@
     background-color: $background;
 
     &.list-group-item-action {
-      &:hover,
       &:focus {
         color: $color;
         background-color: shade-color($background, 10%);
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          color: $color;
+          background-color: shade-color($background, 10%);
+        }
       }
 
       &.active {

@@ -71,10 +71,16 @@
   text-decoration: if($link-decoration == none, null, none);
   white-space: nowrap;
 
-  &:hover,
   &:focus {
     color: var(--#{$prefix}navbar-brand-hover-color);
     text-decoration: if($link-hover-decoration == underline, none, null);
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--#{$prefix}navbar-brand-hover-color);
+      text-decoration: if($link-hover-decoration == underline, none, null);
+    }
   }
 }
 
@@ -123,9 +129,14 @@
   color: var(--#{$prefix}navbar-color);
 
   a,
-  a:hover,
   a:focus  {
     color: var(--#{$prefix}navbar-active-color);
+  }
+
+  @media (hover: hover) {
+    a:hover  {
+      color: var(--#{$prefix}navbar-active-color);
+    }
   }
 }
 
@@ -157,8 +168,10 @@
   @include border-radius(var(--#{$prefix}navbar-toggler-border-radius));
   @include transition(var(--#{$prefix}navbar-toggler-transition));
 
-  &:hover {
-    text-decoration: none;
+  @media (hover: hover) {
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   &:focus {

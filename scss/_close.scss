@@ -26,10 +26,12 @@
   opacity: var(--#{$prefix}btn-close-opacity);
 
   // Override <a>'s hover style
-  &:hover {
-    color: var(--#{$prefix}btn-close-color);
-    text-decoration: none;
-    opacity: var(--#{$prefix}btn-close-hover-opacity);
+  @media (hover: hover) {
+    &:hover {
+      color: var(--#{$prefix}btn-close-color);
+      text-decoration: none;
+      opacity: var(--#{$prefix}btn-close-hover-opacity);
+    }
   }
 
   &:focus {
