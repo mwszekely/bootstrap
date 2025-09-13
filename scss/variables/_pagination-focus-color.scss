@@ -1,0 +1,2 @@
+@use "./dependencies/_pagination-focus-color.scss" as *;
+$pagination-focus-color: var(--#{$prefix}link-hover-color) !default;

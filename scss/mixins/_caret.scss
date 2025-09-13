@@ -1,3 +1,8 @@
+@use "../variables/caret-width" as *;
+@use "../variables/caret-spacing" as *;
+@use "../variables/caret-vertical-align" as *;
+@use "../variables/enable-caret" as *;
+
 // scss-docs-start caret-mixins
 @mixin caret-down($width: $caret-width) {
   border-top: $width solid;

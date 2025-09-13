@@ -1,0 +1,2 @@
+@use "./dependencies/_vr-border-width.scss" as *;
+$vr-border-width: var(--#{$prefix}border-width) !default;

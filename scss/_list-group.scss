@@ -1,3 +1,28 @@
+@use "./variables/prefix" as *;
+@use "./variables/list-group-color" as *;
+@use "./variables/list-group-bg" as *;
+@use "./variables/list-group-border-color" as *;
+@use "./variables/list-group-border-width" as *;
+@use "./variables/list-group-border-radius" as *;
+@use "./variables/list-group-item-padding-x" as *;
+@use "./variables/list-group-item-padding-y" as *;
+@use "./variables/list-group-action-color" as *;
+@use "./variables/list-group-action-hover-color" as *;
+@use "./variables/list-group-hover-bg" as *;
+@use "./variables/list-group-action-active-color" as *;
+@use "./variables/list-group-action-active-bg" as *;
+@use "./variables/list-group-disabled-color" as *;
+@use "./variables/list-group-disabled-bg" as *;
+@use "./variables/list-group-active-color" as *;
+@use "./variables/list-group-active-bg" as *;
+@use "./variables/list-group-active-border-color" as *;
+@use "./variables/link-decoration" as *;
+@use "./variables/grid-breakpoints" as *;
+@use "./variables/theme-colors" as *;
+@use "./mixins/breakpoints" as *;
+@use "./mixins/border-radius" as *;
+@use "sass:map";
+
 // Base class
 //
 // Easily usable on <ul>, <ol>, or <div>.
@@ -121,7 +146,7 @@
 //
 // Change the layout of list group items from vertical (default) to horizontal.
 
-@each $breakpoint in map-keys($grid-breakpoints) {
+@each $breakpoint in map.keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
@@ -182,7 +207,7 @@
 // Add modifier classes to change text and background color on individual items.
 // Organizationally, this must come after the `:hover` states.
 
-@each $state in map-keys($theme-colors) {
+@each $state in map.keys($theme-colors) {
   .list-group-item-#{$state} {
     --#{$prefix}list-group-color: var(--#{$prefix}#{$state}-text-emphasis);
     --#{$prefix}list-group-bg: var(--#{$prefix}#{$state}-bg-subtle);

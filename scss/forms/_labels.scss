@@ -1,3 +1,18 @@
+@use "../variables/form-label-margin-bottom" as *;
+@use "../variables/form-label-font-size" as *;
+@use "../variables/form-label-font-style" as *;
+@use "../variables/form-label-font-weight" as *;
+@use "../variables/form-label-color" as *;
+@use "../variables/input-padding-y" as *;
+@use "../variables/input-border-width" as *;
+@use "../variables/input-line-height" as *;
+@use "../variables/input-padding-y-lg" as *;
+@use "../variables/input-font-size-lg" as *;
+@use "../variables/input-padding-y-sm" as *;
+@use "../variables/input-font-size-sm" as *;
+@use "../vendor/rfs" as *;
+@use "../functions/add" as *;
+
 //
 // Labels
 //

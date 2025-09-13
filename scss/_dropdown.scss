@@ -1,3 +1,59 @@
+@use "./variables/prefix" as *;
+@use "./variables/dropdown-color" as *;
+@use "./variables/dropdown-bg" as *;
+@use "./variables/dropdown-border-color" as *;
+@use "./variables/dropdown-border-radius" as *;
+@use "./variables/dropdown-border-width" as *;
+@use "./variables/dropdown-inner-border-radius" as *;
+@use "./variables/dropdown-divider-bg" as *;
+@use "./variables/dropdown-divider-margin-y" as *;
+@use "./variables/dropdown-box-shadow" as *;
+@use "./variables/dropdown-link-color" as *;
+@use "./variables/dropdown-link-hover-color" as *;
+@use "./variables/dropdown-link-hover-bg" as *;
+@use "./variables/dropdown-link-active-color" as *;
+@use "./variables/dropdown-link-active-bg" as *;
+@use "./variables/dropdown-link-disabled-color" as *;
+@use "./variables/dropdown-item-padding-x" as *;
+@use "./variables/dropdown-item-padding-y" as *;
+@use "./variables/dropdown-header-color" as *;
+@use "./variables/dropdown-header-padding-x" as *;
+@use "./variables/dropdown-header-padding-y" as *;
+@use "./variables/zindex-dropdown" as *;
+@use "./variables/dropdown-min-width" as *;
+@use "./variables/dropdown-padding-x" as *;
+@use "./variables/dropdown-padding-y" as *;
+@use "./variables/dropdown-spacer" as *;
+@use "./variables/dropdown-font-size" as *;
+@use "./variables/dropdown-border-radius" as *;
+@use "./variables/dropdown-box-shadow" as *;
+@use "./variables/grid-breakpoints" as *;
+@use "./variables/font-weight-normal" as *;
+@use "./variables/link-decoration" as *;
+@use "./variables/link-hover-decoration" as *;
+@use "./variables/dropdown-link-hover-bg" as *;
+@use "./variables/enable-gradients" as *;
+@use "./variables/font-size-sm" as *;
+@use "./variables/dropdown-dark-color" as *;
+@use "./variables/dropdown-dark-bg" as *;
+@use "./variables/dropdown-dark-border-color" as *;
+@use "./variables/dropdown-dark-box-shadow" as *;
+@use "./variables/dropdown-dark-link-color" as *;
+@use "./variables/dropdown-dark-link-hover-color" as *;
+@use "./variables/dropdown-dark-divider-bg" as *;
+@use "./variables/dropdown-dark-link-hover-bg" as *;
+@use "./variables/dropdown-dark-link-active-color" as *;
+@use "./variables/dropdown-dark-link-active-bg" as *;
+@use "./variables/dropdown-dark-link-disabled-color" as *;
+@use "./variables/dropdown-dark-header-color" as *;
+@use "./mixins/border-radius" as *;
+@use "./mixins/box-shadow" as *;
+@use "./mixins/gradients" as *;
+@use "./mixins/breakpoints" as *;
+@use "./mixins/caret" as *;
+@use "./vendor/rfs" as *;
+@use "sass:map";
+
 // The dropdown wrapper (`<div>`)
 .dropup,
 .dropend,
@@ -85,7 +141,7 @@
 // We deliberately hardcode the `bs-` prefix because we check
 // this custom property in JS to determine Popper's positioning
 
-@each $breakpoint in map-keys($grid-breakpoints) {
+@each $breakpoint in map.keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 

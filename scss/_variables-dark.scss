@@ -8,70 +8,70 @@
 
 // scss-docs-start sass-dark-mode-vars
 // scss-docs-start theme-text-dark-variables
-$primary-text-emphasis-dark:        tint-color($primary, 40%) !default;
-$secondary-text-emphasis-dark:      tint-color($secondary, 40%) !default;
-$success-text-emphasis-dark:        tint-color($success, 40%) !default;
-$info-text-emphasis-dark:           tint-color($info, 40%) !default;
-$warning-text-emphasis-dark:        tint-color($warning, 40%) !default;
-$danger-text-emphasis-dark:         tint-color($danger, 40%) !default;
-$light-text-emphasis-dark:          $gray-100 !default;
-$dark-text-emphasis-dark:           $gray-300 !default;
+@forward "./variables/dark/primary-text-emphasis-dark";
+@forward "./variables/dark/secondary-text-emphasis-dark";
+@forward "./variables/dark/success-text-emphasis-dark";
+@forward "./variables/dark/info-text-emphasis-dark";
+@forward "./variables/dark/warning-text-emphasis-dark";
+@forward "./variables/dark/danger-text-emphasis-dark";
+@forward "./variables/dark/light-text-emphasis-dark";
+@forward "./variables/dark/dark-text-emphasis-dark";
 // scss-docs-end theme-text-dark-variables
 
 // scss-docs-start theme-bg-subtle-dark-variables
-$primary-bg-subtle-dark:            shade-color($primary, 80%) !default;
-$secondary-bg-subtle-dark:          shade-color($secondary, 80%) !default;
-$success-bg-subtle-dark:            shade-color($success, 80%) !default;
-$info-bg-subtle-dark:               shade-color($info, 80%) !default;
-$warning-bg-subtle-dark:            shade-color($warning, 80%) !default;
-$danger-bg-subtle-dark:             shade-color($danger, 80%) !default;
-$light-bg-subtle-dark:              $gray-800 !default;
-$dark-bg-subtle-dark:               mix($gray-800, $black) !default;
+@forward "./variables/dark/primary-bg-subtle-dark";
+@forward "./variables/dark/secondary-bg-subtle-dark";
+@forward "./variables/dark/success-bg-subtle-dark";
+@forward "./variables/dark/info-bg-subtle-dark";
+@forward "./variables/dark/warning-bg-subtle-dark";
+@forward "./variables/dark/danger-bg-subtle-dark";
+@forward "./variables/dark/light-bg-subtle-dark";
+@forward "./variables/dark/dark-bg-subtle-dark";
 // scss-docs-end theme-bg-subtle-dark-variables
 
 // scss-docs-start theme-border-subtle-dark-variables
-$primary-border-subtle-dark:        shade-color($primary, 40%) !default;
-$secondary-border-subtle-dark:      shade-color($secondary, 40%) !default;
-$success-border-subtle-dark:        shade-color($success, 40%) !default;
-$info-border-subtle-dark:           shade-color($info, 40%) !default;
-$warning-border-subtle-dark:        shade-color($warning, 40%) !default;
-$danger-border-subtle-dark:         shade-color($danger, 40%) !default;
-$light-border-subtle-dark:          $gray-700 !default;
-$dark-border-subtle-dark:           $gray-800 !default;
+@forward "./variables/dark/primary-border-subtle-dark";
+@forward "./variables/dark/secondary-border-subtle-dark";
+@forward "./variables/dark/success-border-subtle-dark";
+@forward "./variables/dark/info-border-subtle-dark";
+@forward "./variables/dark/warning-border-subtle-dark";
+@forward "./variables/dark/danger-border-subtle-dark";
+@forward "./variables/dark/light-border-subtle-dark";
+@forward "./variables/dark/dark-border-subtle-dark";
 // scss-docs-end theme-border-subtle-dark-variables
 
-$body-color-dark:                   $gray-300 !default;
-$body-bg-dark:                      $gray-900 !default;
-$body-secondary-color-dark:         rgba($body-color-dark, .75) !default;
-$body-secondary-bg-dark:            $gray-800 !default;
-$body-tertiary-color-dark:          rgba($body-color-dark, .5) !default;
-$body-tertiary-bg-dark:             mix($gray-800, $gray-900, 50%) !default;
-$body-emphasis-color-dark:          $white !default;
-$border-color-dark:                 $gray-700 !default;
-$border-color-translucent-dark:     rgba($white, .15) !default;
-$headings-color-dark:               inherit !default;
-$link-color-dark:                   tint-color($primary, 40%) !default;
-$link-hover-color-dark:             shift-color($link-color-dark, -$link-shade-percentage) !default;
-$code-color-dark:                   tint-color($code-color, 40%) !default;
-$mark-color-dark:                   $body-color-dark !default;
-$mark-bg-dark:                      $yellow-800 !default;
+@forward "./variables/dark/body-color-dark";
+@forward "./variables/dark/body-bg-dark";
+@forward "./variables/dark/body-secondary-color-dark";
+@forward "./variables/dark/body-secondary-bg-dark";
+@forward "./variables/dark/body-tertiary-color-dark";
+@forward "./variables/dark/body-tertiary-bg-dark";
+@forward "./variables/dark/body-emphasis-color-dark";
+@forward "./variables/dark/border-color-dark";
+@forward "./variables/dark/border-color-translucent-dark";
+@forward "./variables/dark/headings-color-dark";
+@forward "./variables/dark/link-color-dark";
+@forward "./variables/dark/link-hover-color-dark";
+@forward "./variables/dark/code-color-dark";
+@forward "./variables/dark/mark-color-dark";
+@forward "./variables/dark/mark-bg-dark";
 
 
 //
 // Forms
 //
 
-$form-select-indicator-color-dark:  $body-color-dark !default;
-$form-select-indicator-dark:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-indicator-color-dark}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>") !default;
+@forward "./variables/dark/form-select-indicator-color-dark";
+@forward "./variables/dark/form-select-indicator-dark";
 
-$form-switch-color-dark:            rgba($white, .25) !default;
-$form-switch-bg-image-dark:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-color-dark}'/></svg>") !default;
+@forward "./variables/dark/form-switch-color-dark";
+@forward "./variables/dark/form-switch-bg-image-dark";
 
 // scss-docs-start form-validation-colors-dark
-$form-valid-color-dark:             $green-300 !default;
-$form-valid-border-color-dark:      $green-300 !default;
-$form-invalid-color-dark:           $red-300 !default;
-$form-invalid-border-color-dark:    $red-300 !default;
+@forward "./variables/dark/form-valid-color-dark";
+@forward "./variables/dark/form-valid-border-color-dark";
+@forward "./variables/dark/form-invalid-color-dark";
+@forward "./variables/dark/form-invalid-border-color-dark";
 // scss-docs-end form-validation-colors-dark
 
 
@@ -79,11 +79,11 @@ $form-invalid-border-color-dark:    $red-300 !default;
 // Accordion
 //
 
-$accordion-icon-color-dark:         $primary-text-emphasis-dark !default;
-$accordion-icon-active-color-dark:  $primary-text-emphasis-dark !default;
+@forward "./variables/dark/accordion-icon-color-dark";
+@forward "./variables/dark/accordion-icon-active-color-dark";
 
-$accordion-button-icon-dark:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color-dark}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708'/></svg>") !default;
-$accordion-button-active-icon-dark:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color-dark}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708'/></svg>") !default;
+@forward "./variables/dark/accordion-button-icon-dark";
+@forward "./variables/dark/accordion-button-active-icon-dark";
 // scss-docs-end sass-dark-mode-vars
 
 
@@ -91,12 +91,12 @@ $accordion-button-active-icon-dark:  url("data:image/svg+xml,<svg xmlns='http://
 // Carousel
 //
 
-$carousel-indicator-active-bg-dark:   $carousel-dark-indicator-active-bg !default;
-$carousel-caption-color-dark:         $carousel-dark-caption-color !default;
-$carousel-control-icon-filter-dark:   $carousel-dark-control-icon-filter !default;
+@forward "./variables/dark/carousel-indicator-active-bg-dark";
+@forward "./variables/dark/carousel-caption-color-dark";
+@forward "./variables/dark/carousel-control-icon-filter-dark";
 
 //
 // Close button
 //
 
-$btn-close-filter-dark:             $btn-close-white-filter !default;
+@forward "./variables/dark/btn-close-filter-dark";

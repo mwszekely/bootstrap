@@ -1,0 +1,3 @@
+@use "./mixins/banner" as *;
+$file: "" !default;
+@include bsBanner($file);

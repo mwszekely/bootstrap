@@ -1,3 +1,8 @@
+@use "./variables/transition-fade" as *;
+@use "./variables/transition-collapse" as *;
+@use "./variables/transition-collapse-width" as *;
+@use "./mixins/transition" as *;
+
 .fade {
   @include transition($transition-fade);
 

@@ -1,3 +1,50 @@
+@use "../variables/input-padding-y" as *;
+@use "../variables/input-padding-x" as *;
+@use "../variables/input-font-family" as *;
+@use "../variables/input-font-size" as *;
+@use "../variables/input-font-weight" as *;
+@use "../variables/input-line-height" as *;
+@use "../variables/input-color" as *;
+@use "../variables/input-bg" as *;
+@use "../variables/input-border-width" as *;
+@use "../variables/input-border-color" as *;
+@use "../variables/input-border-radius" as *;
+@use "../variables/input-box-shadow" as *;
+@use "../variables/input-transition" as *;
+@use "../variables/input-focus-color" as *;
+@use "../variables/input-focus-bg" as *;
+@use "../variables/input-focus-border-color" as *;
+@use "../variables/enable-shadows" as *;
+@use "../variables/input-focus-box-shadow" as *;
+@use "../variables/input-placeholder-color" as *;
+@use "../variables/input-disabled-color" as *;
+@use "../variables/input-disabled-bg" as *;
+@use "../variables/input-disabled-border-color" as *;
+@use "../variables/form-file-button-color" as *;
+@use "../variables/form-file-button-bg" as *;
+@use "../variables/btn-transition" as *;
+@use "../variables/form-file-button-hover-bg" as *;
+@use "../variables/input-plaintext-color" as *;
+@use "../variables/input-height-sm" as *;
+@use "../variables/input-padding-y-sm" as *;
+@use "../variables/input-padding-x-sm" as *;
+@use "../variables/input-font-size-sm" as *;
+@use "../variables/input-border-radius-sm" as *;
+@use "../variables/input-height-lg" as *;
+@use "../variables/input-padding-y-lg" as *;
+@use "../variables/input-padding-x-lg" as *;
+@use "../variables/input-font-size-lg" as *;
+@use "../variables/input-border-radius-lg" as *;
+@use "../variables/input-height" as *;
+@use "../variables/form-color-width" as *;
+@use "../mixins/border-radius" as *;
+@use "../mixins/box-shadow" as *;
+@use "../mixins/transition" as *;
+@use "../mixins/gradients" as *;
+@use "../vendor/rfs" as *;
+@use "sass:math";
+
+
 //
 // General form controls (plus a few specific high-level interventions)
 //
@@ -56,7 +103,7 @@
     // https://github.com/twbs/bootstrap/issues/23307
     // TODO: we can remove this workaround once https://bugs.webkit.org/show_bug.cgi?id=198959 is resolved
     // Multiply line-height by 1em if it has no unit
-    height: if(unit($input-line-height) == "", $input-line-height * 1em, $input-line-height);
+    height: if(math.unit($input-line-height) == "", $input-line-height * 1em, $input-line-height);
 
     // Android Chrome type="date" is taller than the other inputs
     // because of "margin: 1px 24px 1px 4px" inside the shadow DOM

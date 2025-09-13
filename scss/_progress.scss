@@ -1,3 +1,21 @@
+@use "./variables/enable-transitions" as *;
+@use "./variables/progress-height" as *;
+@use "./variables/progress-font-size" as *;
+@use "./variables/progress-bg" as *;
+@use "./variables/progress-border-radius" as *;
+@use "./variables/progress-box-shadow" as *;
+@use "./variables/progress-bar-color" as *;
+@use "./variables/progress-bar-bg" as *;
+@use "./variables/progress-bar-transition" as *;
+@use "./variables/prefix" as *;
+@use "./variables/progress-bar-animation-timing" as *;
+@use "./variables/enable-reduced-motion" as *;
+@use "./mixins/border-radius" as *;
+@use "./mixins/box-shadow" as *;
+@use "./mixins/transition" as *;
+@use "./mixins/gradients" as *;
+@use "./vendor/rfs" as *;
+
 // Disable animation if transitions are disabled
 
 // scss-docs-start progress-keyframes

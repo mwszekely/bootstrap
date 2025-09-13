@@ -1,3 +1,46 @@
+@use "../variables/form-check-min-height" as *;
+@use "../variables/form-check-padding-start" as *;
+@use "../variables/form-check-margin-bottom" as *;
+@use "../variables/prefix" as *;
+@use "../variables/form-check-input-bg" as *;
+@use "../variables/form-check-input-width" as *;
+@use "../variables/line-height-base" as *;
+@use "../variables/form-check-input-border" as *;
+@use "../variables/form-check-transition" as *;
+@use "../variables/form-check-input-border-radius" as *;
+@use "../variables/form-check-radio-border-radius" as *;
+@use "../variables/form-check-input-active-filter" as *;
+@use "../variables/form-check-input-focus-border" as *;
+@use "../variables/form-check-input-focus-box-shadow" as *;
+@use "../variables/form-check-input-checked-bg-color" as *;
+@use "../variables/form-check-input-checked-border-color" as *;
+@use "../variables/enable-gradients" as *;
+@use "../variables/form-check-input-checked-bg-image" as *;
+@use "../variables/form-check-radio-checked-bg-image" as *;
+@use "../variables/form-check-input-indeterminate-bg-color" as *;
+@use "../variables/form-check-input-indeterminate-border-color" as *;
+@use "../variables/form-check-input-indeterminate-bg-image" as *;
+@use "../variables/form-check-input-disabled-opacity" as *;
+@use "../variables/form-check-label-disabled-opacity" as *;
+@use "../variables/form-check-label-color" as *;
+@use "../variables/form-check-label-cursor" as *;
+@use "../variables/form-switch-padding-start" as *;
+@use "../variables/form-switch-bg-image" as *;
+@use "../variables/form-switch-width" as *;
+@use "../variables/form-switch-border-radius" as *;
+@use "../variables/form-switch-transition" as *;
+@use "../variables/form-switch-focus-bg-image" as *;
+@use "../variables/form-switch-checked-bg-position" as *;
+@use "../variables/form-switch-checked-bg-image" as *;
+@use "../variables/form-check-inline-margin-end" as *;
+@use "../variables/form-check-btn-check-disabled-opacity" as *;
+@use "../variables/enable-dark-mode" as *;
+@use "../variables/dark/form-switch-bg-image-dark" as *;
+@use "../functions/escape-svg" as *;
+@use "../mixins/color-mode" as *;
+@use "../mixins/border-radius" as *;
+@use "../mixins/transition" as *;
+
 //
 // Check/radio
 //

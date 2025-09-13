@@ -1,3 +1,64 @@
+@use "./variables/theme-colors" as *;
+@use "./variables/primary-text-emphasis" as *;
+@use "./variables/secondary-text-emphasis" as *;
+@use "./variables/success-text-emphasis" as *;
+@use "./variables/info-text-emphasis" as *;
+@use "./variables/warning-text-emphasis" as *;
+@use "./variables/danger-text-emphasis" as *;
+@use "./variables/light-text-emphasis" as *;
+@use "./variables/dark-text-emphasis" as *;
+@use "./variables/dark/primary-text-emphasis-dark" as *;
+@use "./variables/dark/secondary-text-emphasis-dark" as *;
+@use "./variables/dark/success-text-emphasis-dark" as *;
+@use "./variables/dark/info-text-emphasis-dark" as *;
+@use "./variables/dark/warning-text-emphasis-dark" as *;
+@use "./variables/dark/danger-text-emphasis-dark" as *;
+@use "./variables/dark/light-text-emphasis-dark" as *;
+@use "./variables/dark/dark-text-emphasis-dark" as *;
+@use "./variables/primary-bg-subtle" as *;
+@use "./variables/secondary-bg-subtle" as *;
+@use "./variables/success-bg-subtle" as *;
+@use "./variables/info-bg-subtle" as *;
+@use "./variables/warning-bg-subtle" as *;
+@use "./variables/danger-bg-subtle" as *;
+@use "./variables/light-bg-subtle" as *;
+@use "./variables/dark-bg-subtle" as *;
+@use "./variables/dark/primary-bg-subtle-dark" as *;
+@use "./variables/dark/secondary-bg-subtle-dark" as *;
+@use "./variables/dark/success-bg-subtle-dark" as *;
+@use "./variables/dark/info-bg-subtle-dark" as *;
+@use "./variables/dark/warning-bg-subtle-dark" as *;
+@use "./variables/dark/danger-bg-subtle-dark" as *;
+@use "./variables/dark/light-bg-subtle-dark" as *;
+@use "./variables/dark/dark-bg-subtle-dark" as *;
+@use "./variables/primary-border-subtle" as *;
+@use "./variables/secondary-border-subtle" as *;
+@use "./variables/success-border-subtle" as *;
+@use "./variables/info-border-subtle" as *;
+@use "./variables/warning-border-subtle" as *;
+@use "./variables/danger-border-subtle" as *;
+@use "./variables/light-border-subtle" as *;
+@use "./variables/dark-border-subtle" as *;
+@use "./variables/enable-dark-mode" as *;
+@use "./variables/dark/primary-border-subtle-dark" as *;
+@use "./variables/dark/secondary-border-subtle-dark" as *;
+@use "./variables/dark/success-border-subtle-dark" as *;
+@use "./variables/dark/info-border-subtle-dark" as *;
+@use "./variables/dark/warning-border-subtle-dark" as *;
+@use "./variables/dark/danger-border-subtle-dark" as *;
+@use "./variables/dark/light-border-subtle-dark" as *;
+@use "./variables/dark/dark-border-subtle-dark" as *;
+@use "./variables/enable-negative-margins" as *;
+@use "./variables/black" as *;
+@use "./variables/white" as *;
+@use "./variables/prefix" as *;
+@use "./variables/body-color" as *;
+@use "./variables/body-bg" as *;
+@use "./variables/spacers" as *;
+@use "./functions/to-rgb" as *;
+@use "./functions/map-loop" as *;
+@use "sass:map";
+
 // Re-assigned maps
 //
 // Placed here so that others can override the default Sass maps and see automatic updates to utilities and more.
@@ -100,7 +161,7 @@ $utilities-colors: $theme-colors-rgb !default;
 // scss-docs-end utilities-colors
 
 // scss-docs-start utilities-text-colors
-$utilities-text: map-merge(
+$utilities-text: map.merge(
   $utilities-colors,
   (
     "black": to-rgb($black),
@@ -123,7 +184,7 @@ $utilities-text-emphasis-colors: (
 // scss-docs-end utilities-text-colors
 
 // scss-docs-start utilities-bg-colors
-$utilities-bg: map-merge(
+$utilities-bg: map.merge(
   $utilities-colors,
   (
     "black": to-rgb($black),
@@ -146,7 +207,7 @@ $utilities-bg-subtle: (
 // scss-docs-end utilities-bg-colors
 
 // scss-docs-start utilities-border-colors
-$utilities-border: map-merge(
+$utilities-border: map.merge(
   $utilities-colors,
   (
     "black": to-rgb($black),

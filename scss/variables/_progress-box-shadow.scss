@@ -1,0 +1,2 @@
+@use "./dependencies/_progress-box-shadow.scss" as *;
+$progress-box-shadow: var(--#{$prefix}box-shadow-inset) !default;

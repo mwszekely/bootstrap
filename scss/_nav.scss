@@ -1,3 +1,34 @@
+@use "./variables/prefix" as *;
+@use "./variables/nav-link-padding-x" as *;
+@use "./variables/nav-link-padding-y" as *;
+@use "./variables/nav-link-font-size" as *;
+@use "./variables/nav-link-font-weight" as *;
+@use "./variables/nav-link-color" as *;
+@use "./variables/nav-link-hover-color" as *;
+@use "./variables/nav-link-disabled-color" as *;
+@use "./variables/link-decoration" as *;
+@use "./variables/nav-link-transition" as *;
+@use "./variables/link-hover-decoration" as *;
+@use "./variables/nav-link-focus-box-shadow" as *;
+@use "./variables/nav-tabs-border-width" as *;
+@use "./variables/nav-tabs-border-color" as *;
+@use "./variables/nav-tabs-border-radius" as *;
+@use "./variables/nav-tabs-link-hover-border-color" as *;
+@use "./variables/nav-tabs-link-active-color" as *;
+@use "./variables/nav-tabs-link-active-bg" as *;
+@use "./variables/nav-tabs-link-active-border-color" as *;
+@use "./variables/nav-pills-border-radius" as *;
+@use "./variables/nav-pills-link-active-color" as *;
+@use "./variables/nav-pills-link-active-bg" as *;
+@use "./variables/nav-underline-gap" as *;
+@use "./variables/nav-underline-border-width" as *;
+@use "./variables/nav-underline-link-active-color" as *;
+@use "./variables/font-weight-bold" as *;
+@use "./mixins/transition" as *;
+@use "./mixins/gradients" as *;
+@use "./mixins/border-radius" as *;
+@use "./vendor/rfs" as *;
+
 // Base class
 //
 // Kickstart any navigation component with a set of style resets. Works with

@@ -1,3 +1,35 @@
+@use "./variables/prefix" as *;
+@use "./variables/accordion-color" as *;
+@use "./variables/accordion-bg" as *;
+@use "./variables/accordion-transition" as *;
+@use "./variables/accordion-border-color" as *;
+@use "./variables/accordion-border-width" as *;
+@use "./variables/accordion-border-radius" as *;
+@use "./variables/accordion-inner-border-radius" as *;
+@use "./variables/accordion-button-padding-x" as *;
+@use "./variables/accordion-button-padding-y" as *;
+@use "./variables/accordion-button-color" as *;
+@use "./variables/accordion-button-bg" as *;
+@use "./variables/accordion-button-icon" as *;
+@use "./variables/accordion-icon-width" as *;
+@use "./variables/accordion-icon-transform" as *;
+@use "./variables/accordion-icon-transition" as *;
+@use "./variables/accordion-button-active-icon" as *;
+@use "./variables/accordion-button-focus-box-shadow" as *;
+@use "./variables/accordion-body-padding-x" as *;
+@use "./variables/accordion-body-padding-y" as *;
+@use "./variables/accordion-button-active-color" as *;
+@use "./variables/accordion-button-active-bg" as *;
+@use "./variables/font-size-base" as *;
+@use "./variables/enable-dark-mode" as *;
+@use "./variables/dark/accordion-button-icon-dark" as *;
+@use "./variables/dark/accordion-button-active-icon-dark" as *;
+@use "./mixins/border-radius" as *;
+@use "./mixins/transition" as *;
+@use "./mixins/color-mode" as *;
+@use "./functions/escape-svg" as *;
+@use "./vendor/rfs" as *;
+
 //
 // Base styles
 //

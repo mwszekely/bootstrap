@@ -1,0 +1,12 @@
+@use "sass:map";
+@use "sass:list";
+
+@function map-get-multiple($map, $values) {
+  $result: ();
+  @each $key, $value in $map {
+    @if (list.index($values, $key) != null) {
+      $result: map.merge($result, ($key: $value));
+    }
+  }
+  @return $result;
+}

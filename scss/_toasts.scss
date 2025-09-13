@@ -1,3 +1,22 @@
+@use "./variables/prefix" as *;
+@use "./variables/zindex-toast" as *;
+@use "./variables/toast-padding-x" as *;
+@use "./variables/toast-padding-y" as *;
+@use "./variables/toast-spacing" as *;
+@use "./variables/toast-max-width" as *;
+@use "./variables/toast-color" as *;
+@use "./variables/toast-background-color" as *;
+@use "./variables/toast-border-width" as *;
+@use "./variables/toast-border-color" as *;
+@use "./variables/toast-border-radius" as *;
+@use "./variables/toast-box-shadow" as *;
+@use "./variables/toast-header-color" as *;
+@use "./variables/toast-header-background-color" as *;
+@use "./variables/toast-header-border-color" as *;
+@use "./variables/toast-font-size" as *;
+@use "./mixins/border-radius" as *;
+@use "./vendor/rfs" as *;
+
 .toast {
   // scss-docs-start toast-css-vars
   --#{$prefix}toast-zindex: #{$zindex-toast};

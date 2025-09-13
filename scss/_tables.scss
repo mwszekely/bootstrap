@@ -1,3 +1,30 @@
+@use "./variables/prefix" as *;
+@use "./variables/spacer" as *;
+@use "./variables/table-color" as *;
+@use "./variables/table-bg" as *;
+@use "./variables/table-border-color" as *;
+@use "./variables/table-accent-bg" as *;
+@use "./variables/table-striped-color" as *;
+@use "./variables/table-striped-bg" as *;
+@use "./variables/table-active-color" as *;
+@use "./variables/table-active-bg" as *;
+@use "./variables/table-hover-color" as *;
+@use "./variables/table-hover-bg" as *;
+@use "./variables/table-cell-vertical-align" as *;
+@use "./variables/table-cell-padding-y" as *;
+@use "./variables/table-cell-padding-x" as *;
+@use "./variables/table-border-width" as *;
+@use "./variables/table-group-separator-color" as *;
+@use "./variables/table-cell-padding-y-sm" as *;
+@use "./variables/table-cell-padding-x-sm" as *;
+@use "./variables/table-striped-order" as *;
+@use "./variables/table-striped-columns-order" as *;
+@use "./variables/table-variants" as *;
+@use "./variables/grid-breakpoints" as *;
+@use "./mixins/_table-variants.scss" as *;
+@use "./mixins/breakpoints" as *;
+@use "sass:map";
+
 //
 // Basic Bootstrap table
 //
@@ -159,7 +186,7 @@
 // Generate series of `.table-responsive-*` classes for configuring the screen
 // size of where your table will overflow.
 
-@each $breakpoint in map-keys($grid-breakpoints) {
+@each $breakpoint in map.keys($grid-breakpoints) {
   $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
   @include media-breakpoint-down($breakpoint) {

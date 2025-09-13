@@ -1,0 +1,2 @@
+@use "./dependencies/_list-group-action-hover-color.scss" as *;
+$list-group-action-hover-color: var(--#{$prefix}emphasis-color) !default;

@@ -1,0 +1,2 @@
+@use "./dependencies/_list-group-disabled-color.scss" as *;
+$list-group-disabled-color: var(--#{$prefix}secondary-color) !default;

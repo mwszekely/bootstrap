@@ -1,0 +1,2 @@
+@use "./dependencies/_accordion-border-width.scss" as *;
+$accordion-border-width: var(--#{$prefix}border-width) !default;

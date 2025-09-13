@@ -1,0 +1,6 @@
+@use "../functions/color-round" as *;
+@use "sass:color";
+
+@function opaque($background, $foreground) {
+  @return color-round(color.mix(color.adjust($foreground, $alpha: 1), $background, color.alpha($foreground) * 100%));
+}

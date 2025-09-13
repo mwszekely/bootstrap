@@ -1,19 +1,19 @@
-@import "mixins/banner";
-@include bsBanner(Utilities);
+@forward "./mixins/banner";
+@use "./banner" with ($file: Utilities);
 
 // Configuration
-@import "functions";
-@import "variables";
-@import "variables-dark";
-@import "maps";
-@import "mixins";
-@import "utilities";
+@forward "./functions";
+@forward "./variables";
+@forward "./variables-dark";
+@forward "./maps";
+@forward "./mixins" hide divide;   // exported by ./functions
+@forward "./utilities";
 
 // Layout & components
-@import "root";
+@forward "./root";
 
 // Helpers
-@import "helpers";
+@forward "./helpers";
 
 // Utilities
-@import "utilities/api";
+@forward "./utilities/api";

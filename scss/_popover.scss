@@ -1,3 +1,29 @@
+@use "./variables/prefix" as *;
+@use "./variables/zindex-popover" as *;
+@use "./variables/popover-max-width" as *;
+@use "./variables/popover-bg" as *;
+@use "./variables/popover-border-width" as *;
+@use "./variables/popover-border-color" as *;
+@use "./variables/popover-border-radius" as *;
+@use "./variables/popover-inner-border-radius" as *;
+@use "./variables/popover-box-shadow" as *;
+@use "./variables/popover-header-padding-x" as *;
+@use "./variables/popover-header-padding-y" as *;
+@use "./variables/popover-header-color" as *;
+@use "./variables/popover-header-bg" as *;
+@use "./variables/popover-body-padding-x" as *;
+@use "./variables/popover-body-padding-y" as *;
+@use "./variables/popover-body-color" as *;
+@use "./variables/popover-arrow-width" as *;
+@use "./variables/popover-arrow-height" as *;
+@use "./variables/popover-border-color" as *;
+@use "./variables/popover-font-size" as *;
+@use "./variables/popover-header-font-size" as *;
+@use "./mixins/reset-text" as *;
+@use "./mixins/border-radius" as *;
+@use "./mixins/box-shadow" as *;
+@use "./vendor/rfs" as *;
+
 .popover {
   // scss-docs-start popover-css-vars
   --#{$prefix}popover-zindex: #{$zindex-popover};

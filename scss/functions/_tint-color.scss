@@ -1,0 +1,6 @@
+@use "sass:color";
+@use "./color-round" as *;
+
+@function tint-color($color, $weight) {
+  @return color-round(color.mix(white, $color, $weight));
+}

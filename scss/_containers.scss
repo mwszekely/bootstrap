@@ -1,3 +1,9 @@
+@use "./variables/enable-container-classes" as *;
+@use "./variables/container-max-widths" as *;
+@use "./variables/grid-breakpoints" as *;
+@use "./mixins/container" as *;
+@use "./mixins/breakpoints" as *;
+
 // Container widths
 //
 // Set the container width, and override it for fixed navbars in media queries.

@@ -1,3 +1,51 @@
+@use "./variables/prefix" as *;
+@use "./variables/navbar-padding-x" as *;
+@use "./variables/navbar-padding-y" as *;
+@use "./variables/navbar-light-color" as *;
+@use "./variables/navbar-light-hover-color" as *;
+@use "./variables/navbar-light-disabled-color" as *;
+@use "./variables/navbar-light-active-color" as *;
+@use "./variables/navbar-brand-padding-y" as *;
+@use "./variables/navbar-brand-margin-end" as *;
+@use "./variables/navbar-brand-font-size" as *;
+@use "./variables/navbar-light-brand-color" as *;
+@use "./variables/navbar-light-brand-hover-color" as *;
+@use "./variables/navbar-nav-link-padding-x" as *;
+@use "./variables/navbar-toggler-padding-y" as *;
+@use "./variables/navbar-toggler-padding-x" as *;
+@use "./variables/navbar-toggler-font-size" as *;
+@use "./variables/navbar-light-toggler-icon-bg" as *;
+@use "./variables/navbar-light-toggler-border-color" as *;
+@use "./variables/navbar-toggler-border-radius" as *;
+@use "./variables/navbar-toggler-focus-width" as *;
+@use "./variables/navbar-toggler-transition" as *;
+@use "./variables/container-max-widths" as *;
+@use "./variables/link-decoration" as *;
+@use "./variables/link-hover-decoration" as *;
+@use "./variables/nav-link-padding-y" as *;
+@use "./variables/nav-link-font-size" as *;
+@use "./variables/nav-link-font-weight" as *;
+@use "./variables/grid-breakpoints" as *;
+@use "./variables/navbar-dark-color" as *;
+@use "./variables/navbar-dark-hover-color" as *;
+@use "./variables/navbar-dark-disabled-color" as *;
+@use "./variables/navbar-dark-active-color" as *;
+@use "./variables/navbar-dark-brand-color" as *;
+@use "./variables/navbar-dark-brand-hover-color" as *;
+@use "./variables/navbar-dark-toggler-border-color" as *;
+@use "./variables/navbar-dark-toggler-icon-bg" as *;
+@use "./variables/enable-dark-mode" as *;
+@use "./mixins/breakpoints" as *;
+@use "./mixins/gradients" as *;
+@use "./mixins/border-radius" as *;
+@use "./mixins/transition" as *;
+@use "./mixins/box-shadow" as *;
+@use "./mixins/deprecate" as *;
+@use "./mixins/color-mode" as *;
+@use "./functions/escape-svg" as *;
+@use "./vendor/rfs" as *;
+@use "sass:map";
+
 // Navbar
 //
 // Provide a static navbar from which we expand to create full-width, fixed, and
@@ -190,7 +238,7 @@
 // Generate series of `.navbar-expand-*` responsive classes for configuring
 // where your navbar collapses.
 .navbar-expand {
-  @each $breakpoint in map-keys($grid-breakpoints) {
+  @each $breakpoint in map.keys($grid-breakpoints) {
     $next: breakpoint-next($breakpoint, $grid-breakpoints);
     $infix: breakpoint-infix($next, $grid-breakpoints);
 

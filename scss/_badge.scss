@@ -1,3 +1,20 @@
+@use "./variables/prefix" as *;
+@use "./variables/badge-padding-x" as *;
+@use "./variables/badge-padding-y" as *;
+@use "./variables/badge-font-size" as *;
+@use "./variables/badge-font-weight" as *;
+@use "./variables/badge-color" as *;
+@use "./variables/badge-border-radius" as *;
+@use "./variables/prefix" as *;
+@use "./variables/prefix" as *;
+@use "./variables/prefix" as *;
+@use "./variables/prefix" as *;
+@use "./variables/prefix" as *;
+
+@use "./mixins/border-radius" as *;
+@use "./mixins/gradients" as *;
+@use "./vendor/rfs" as *;
+
 // Base class
 //
 // Requires one of the contextual, color modifier classes for `color` and

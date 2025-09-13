@@ -1,3 +1,46 @@
+@use "./variables/prefix" as *;
+@use "./variables/zindex-modal" as *;
+@use "./variables/modal-md" as *;
+@use "./variables/modal-inner-padding" as *;
+@use "./variables/modal-dialog-margin" as *;
+@use "./variables/modal-content-color" as *;
+@use "./variables/modal-content-bg" as *;
+@use "./variables/modal-content-border-color" as *;
+@use "./variables/modal-content-border-width" as *;
+@use "./variables/modal-content-border-radius" as *;
+@use "./variables/modal-content-box-shadow-xs" as *;
+@use "./variables/modal-content-inner-border-radius" as *;
+@use "./variables/modal-header-padding-x" as *;
+@use "./variables/modal-header-padding-y" as *;
+@use "./variables/modal-header-padding" as *;
+@use "./variables/modal-header-border-color" as *;
+@use "./variables/modal-header-border-width" as *;
+@use "./variables/modal-title-line-height" as *;
+@use "./variables/modal-footer-margin-between" as *;
+@use "./variables/modal-footer-bg" as *;
+@use "./variables/modal-footer-border-color" as *;
+@use "./variables/modal-footer-border-width" as *;
+@use "./variables/modal-fade-transform" as *;
+@use "./variables/modal-show-transform" as *;
+@use "./variables/modal-scale-transform" as *;
+@use "./variables/modal-transition" as *;
+@use "./variables/zindex-modal-backdrop" as *;
+@use "./variables/modal-backdrop-bg" as *;
+@use "./variables/modal-backdrop-opacity" as *;
+@use "./variables/modal-dialog-margin-y-sm-up" as *;
+@use "./variables/modal-content-box-shadow-sm-up" as *;
+@use "./variables/modal-content-color" as *;
+@use "./variables/modal-sm" as *;
+@use "./variables/modal-lg" as *;
+@use "./variables/modal-xl" as *;
+@use "./variables/grid-breakpoints" as *;
+@use "./mixins/transition" as *;
+@use "./mixins/border-radius" as *;
+@use "./mixins/box-shadow" as *;
+@use "./mixins/backdrop" as *;
+@use "./mixins/breakpoints" as *;
+@use "sass:map";
+
 // stylelint-disable function-disallowed-list
 
 // .modal-open      - body class for killing the scroll
@@ -209,7 +252,7 @@
 }
 
 // scss-docs-start modal-fullscreen-loop
-@each $breakpoint in map-keys($grid-breakpoints) {
+@each $breakpoint in map.keys($grid-breakpoints) {
   $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
   $postfix: if($infix != "", $infix + "-down", "");
 

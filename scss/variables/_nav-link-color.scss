@@ -1,0 +1,2 @@
+@use "./dependencies/_nav-link-color.scss" as *;
+$nav-link-color: var(--#{$prefix}link-color) !default;

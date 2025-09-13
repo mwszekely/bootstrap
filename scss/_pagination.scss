@@ -1,3 +1,44 @@
+@use "./variables/prefix" as *;
+@use "./variables/pagination-padding-x" as *;
+@use "./variables/pagination-padding-y" as *;
+@use "./variables/pagination-color" as *;
+@use "./variables/pagination-bg" as *;
+@use "./variables/pagination-border-width" as *;
+@use "./variables/pagination-border-color" as *;
+@use "./variables/pagination-border-radius" as *;
+@use "./variables/pagination-hover-color" as *;
+@use "./variables/pagination-hover-bg" as *;
+@use "./variables/pagination-hover-border-color" as *;
+@use "./variables/pagination-focus-color" as *;
+@use "./variables/pagination-focus-bg" as *;
+@use "./variables/pagination-focus-box-shadow" as *;
+@use "./variables/pagination-active-color" as *;
+@use "./variables/pagination-active-bg" as *;
+@use "./variables/pagination-active-border-color" as *;
+@use "./variables/pagination-disabled-color" as *;
+@use "./variables/pagination-disabled-bg" as *;
+@use "./variables/pagination-disabled-border-color" as *;
+@use "./variables/pagination-font-size" as *;
+@use "./variables/link-decoration" as *;
+@use "./variables/pagination-transition" as *;
+@use "./variables/link-hover-decoration" as *;
+@use "./variables/pagination-focus-outline" as *;
+@use "./variables/pagination-margin-start" as *;
+@use "./variables/pagination-padding-y-lg" as *;
+@use "./variables/pagination-padding-x-lg" as *;
+@use "./variables/font-size-lg" as *;
+@use "./variables/pagination-border-radius-lg" as *;
+@use "./variables/pagination-padding-y-sm" as *;
+@use "./variables/pagination-padding-x-sm" as *;
+@use "./variables/font-size-sm" as *;
+@use "./variables/pagination-border-radius-sm" as *;
+@use "./mixins/border-radius" as *;
+@use "./mixins/lists" as *;
+@use "./mixins/transition" as *;
+@use "./mixins/gradients" as *;
+@use "./mixins/pagination" as *;
+@use "./vendor/rfs" as *;
+
 .pagination {
   // scss-docs-start pagination-css-vars
   --#{$prefix}pagination-padding-x: #{$pagination-padding-x};

@@ -1,3 +1,14 @@
+@use "./variables/prefix" as *;
+@use "./variables/spinner-width" as *;
+@use "./variables/spinner-height" as *;
+@use "./variables/spinner-vertical-align" as *;
+@use "./variables/spinner-border-width" as *;
+@use "./variables/spinner-animation-speed" as *;
+@use "./variables/spinner-width-sm" as *;
+@use "./variables/spinner-height-sm" as *;
+@use "./variables/spinner-border-width-sm" as *;
+@use "./variables/enable-reduced-motion" as *;
+
 //
 // Rotating border
 //

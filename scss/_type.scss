@@ -1,3 +1,21 @@
+@use "./variables/lead-font-size" as *;
+@use "./variables/lead-font-weight" as *;
+@use "./variables/display-font-sizes" as *;
+@use "./variables/display-font-family" as *;
+@use "./variables/display-font-style" as *;
+@use "./variables/display-font-weight" as *;
+@use "./variables/display-line-height" as *;
+@use "./variables/list-inline-padding" as *;
+@use "./variables/initialism-font-size" as *;
+@use "./variables/blockquote-margin-y" as *;
+@use "./variables/blockquote-font-size" as *;
+@use "./variables/blockquote-footer-font-size" as *;
+@use "./variables/blockquote-footer-color" as *;
+@use "./reboot" as *;
+
+@use "./vendor/rfs" as *;
+@use "./mixins/lists" as *;
+
 //
 // Headings
 //

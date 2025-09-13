@@ -1,3 +1,11 @@
+@use "../variables/prefix" as *;
+@use "../variables/icon-link-gap" as *;
+@use "../variables/icon-link-underline-offset" as *;
+@use "../variables/icon-link-icon-size" as *;
+@use "../variables/icon-link-icon-transition" as *;
+@use "../variables/icon-link-icon-transform" as *;
+@use "../mixins/transition" as *;
+
 .icon-link {
   display: inline-flex;
   gap: $icon-link-gap;

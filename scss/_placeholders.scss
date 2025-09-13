@@ -1,3 +1,7 @@
+@use "./variables/placeholder-opacity-max" as *;
+@use "./variables/placeholder-opacity-min" as *;
+@use "./variables/black" as *;
+
 .placeholder {
   display: inline-block;
   min-height: 1em;

@@ -1,0 +1,5 @@
+@use "./dependencies/_enable-precise-colors.scss" as *;
+
+// Flag to preserve old behavior, 
+// which would always round color channels
+$enable-precise-colors: false !default;

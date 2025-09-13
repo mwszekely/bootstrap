@@ -1,3 +1,19 @@
+@use "./variables/prefix" as *;
+@use "./variables/breadcrumb-padding-x" as *;
+@use "./variables/breadcrumb-padding-y" as *;
+@use "./variables/breadcrumb-margin-bottom" as *;
+@use "./variables/breadcrumb-bg" as *;
+@use "./variables/breadcrumb-border-radius" as *;
+@use "./variables/breadcrumb-divider-color" as *;
+@use "./variables/breadcrumb-item-padding-x" as *;
+@use "./variables/breadcrumb-active-color" as *;
+@use "./variables/breadcrumb-font-size" as *;
+@use "./variables/breadcrumb-divider" as *;
+@use "./variables/breadcrumb-divider-flipped" as *;
+@use "./mixins/border-radius" as *;
+@use "./functions/escape-svg" as *;
+@use "./vendor/rfs" as *;
+
 .breadcrumb {
   // scss-docs-start breadcrumb-css-vars
   --#{$prefix}breadcrumb-padding-x: #{$breadcrumb-padding-x};

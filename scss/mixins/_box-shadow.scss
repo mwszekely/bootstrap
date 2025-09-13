@@ -1,3 +1,5 @@
+@use "../variables/enable-shadows" as *;
+
 @mixin box-shadow($shadow...) {
   @if $enable-shadows {
     $result: ();

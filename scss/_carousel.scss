@@ -1,3 +1,37 @@
+@use "./variables/prefix" as *;
+@use "./variables/carousel-transition" as *;
+@use "./variables/carousel-transition-duration" as *;
+@use "./variables/carousel-control-width" as *;
+@use "./variables/carousel-control-color" as *;
+@use "./variables/carousel-control-opacity" as *;
+@use "./variables/carousel-control-transition" as *;
+@use "./variables/carousel-control-hover-opacity" as *;
+@use "./variables/carousel-control-icon-width" as *;
+@use "./variables/carousel-control-prev-icon-bg" as *;
+@use "./variables/carousel-control-next-icon-bg" as *;
+@use "./variables/carousel-indicator-width" as *;
+@use "./variables/carousel-indicator-height" as *;
+@use "./variables/carousel-indicator-spacer" as *;
+@use "./variables/carousel-indicator-hit-area-height" as *;
+@use "./variables/carousel-indicator-opacity" as *;
+@use "./variables/carousel-indicator-transition" as *;
+@use "./variables/carousel-indicator-active-opacity" as *;
+@use "./variables/carousel-caption-width" as *;
+@use "./variables/carousel-caption-spacer" as *;
+@use "./variables/carousel-caption-padding-y" as *;
+@use "./variables/dark/carousel-indicator-active-bg-dark" as *;
+@use "./variables/dark/carousel-caption-color-dark" as *;
+@use "./variables/dark/carousel-control-icon-filter-dark" as *;
+@use "./variables/carousel-indicator-active-bg" as *;
+@use "./variables/carousel-caption-color" as *;
+@use "./variables/carousel-control-icon-filter" as *;
+@use "./variables/enable-dark-mode" as *;
+@use "./variables/enable-gradients" as *;
+@use "./functions/escape-svg" as *;
+@use "./mixins/transition" as *;
+@use "./mixins/color-mode" as *;
+@use "./mixins/clearfix" as *;
+
 // Notes on the classes:
 //
 // 1. .carousel.pointer-event should ideally be pan-y (to allow for users to scroll vertically)

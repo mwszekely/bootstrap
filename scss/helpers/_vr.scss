@@ -1,3 +1,6 @@
+@use "../variables/vr-border-width" as *;
+@use "../variables/hr-opacity" as *;
+
 .vr {
   display: inline-block;
   align-self: stretch;

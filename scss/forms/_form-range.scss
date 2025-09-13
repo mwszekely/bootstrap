@@ -1,3 +1,26 @@
+@use "../variables/form-range-thumb-height" as *;
+@use "../variables/form-range-thumb-focus-box-shadow-width" as *;
+@use "../variables/form-range-thumb-focus-box-shadow" as *;
+@use "../variables/form-range-thumb-width" as *;
+@use "../variables/form-range-track-height" as *;
+@use "../variables/form-range-thumb-bg" as *;
+@use "../variables/form-range-thumb-border" as *;
+@use "../variables/form-range-thumb-border-radius" as *;
+@use "../variables/form-range-thumb-box-shadow" as *;
+@use "../variables/form-range-thumb-transition" as *;
+@use "../variables/form-range-thumb-active-bg" as *;
+@use "../variables/form-range-track-width" as *;
+@use "../variables/form-range-track-cursor" as *;
+@use "../variables/form-range-track-bg" as *;
+@use "../variables/form-range-track-border-radius" as *;
+@use "../variables/form-range-track-box-shadow" as *;
+@use "../variables/form-range-thumb-disabled-bg" as *;
+@use "../mixins/gradients" as *;
+@use "../mixins/border-radius" as *;
+@use "../mixins/box-shadow" as *;
+@use "../mixins/transition" as *;
+@use "../functions/add" as *;
+
 // Range
 //
 // Style range inputs the same across browsers. Vendor-specific rules for pseudo

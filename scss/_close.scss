@@ -1,3 +1,22 @@
+@use "./variables/prefix" as *;
+@use "./variables/btn-close-color" as *;
+@use "./variables/btn-close-bg" as *;
+@use "./variables/btn-close-opacity" as *;
+@use "./variables/btn-close-hover-opacity" as *;
+@use "./variables/btn-close-focus-shadow" as *;
+@use "./variables/btn-close-focus-opacity" as *;
+@use "./variables/btn-close-disabled-opacity" as *;
+@use "./variables/btn-close-width" as *;
+@use "./variables/btn-close-height" as *;
+@use "./variables/btn-close-padding-y" as *;
+@use "./variables/btn-close-padding-x" as *;
+@use "./variables/dark/btn-close-filter-dark" as *;
+@use "./variables/btn-close-filter" as *;
+@use "./variables/enable-dark-mode" as *;
+@use "./functions/escape-svg" as *;
+@use "./mixins/border-radius" as *;
+@use "./mixins/color-mode" as *;
+
 // Transparent background and border properties included for button version.
 // iOS requires the button element instead of an anchor tag.
 // If you want the anchor version, it requires `href="#"`.

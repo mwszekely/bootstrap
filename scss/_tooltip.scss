@@ -1,3 +1,21 @@
+@use "./variables/prefix" as *;
+@use "./variables/zindex-tooltip" as *;
+@use "./variables/tooltip-max-width" as *;
+@use "./variables/tooltip-padding-x" as *;
+@use "./variables/tooltip-padding-y" as *;
+@use "./variables/tooltip-margin" as *;
+@use "./variables/tooltip-color" as *;
+@use "./variables/tooltip-bg" as *;
+@use "./variables/tooltip-border-radius" as *;
+@use "./variables/tooltip-opacity" as *;
+@use "./variables/tooltip-arrow-width" as *;
+@use "./variables/tooltip-arrow-height" as *;
+@use "./variables/tooltip-font-size" as *;
+@use "./mixins/deprecate" as *;
+@use "./mixins/reset-text" as *;
+@use "./mixins/border-radius" as *;
+@use "./vendor/rfs" as *;
+
 // Base class
 .tooltip {
   // scss-docs-start tooltip-css-vars

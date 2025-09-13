@@ -1,3 +1,44 @@
+@use "../variables/prefix" as *;
+@use "../variables/form-select-padding-y" as *;
+@use "../variables/form-select-indicator-padding" as *;
+@use "../variables/form-select-padding-x" as *;
+@use "../variables/form-select-font-family" as *;
+@use "../variables/form-select-font-weight" as *;
+@use "../variables/form-select-line-height" as *;
+@use "../variables/form-select-color" as *;
+@use "../variables/form-select-bg" as *;
+@use "../variables/form-select-indicator" as *;
+@use "../variables/form-select-font-size" as *;
+@use "../variables/form-select-bg-position" as *;
+@use "../variables/form-select-bg-size" as *;
+@use "../variables/form-select-border-width" as *;
+@use "../variables/form-select-border-color" as *;
+@use "../variables/form-select-border-radius" as *;
+@use "../variables/form-select-box-shadow" as *;
+@use "../variables/form-select-transition" as *;
+@use "../variables/form-select-focus-border-color" as *;
+@use "../variables/enable-shadows" as *;
+@use "../variables/form-select-focus-box-shadow" as *;
+@use "../variables/form-select-disabled-color" as *;
+@use "../variables/form-select-disabled-bg" as *;
+@use "../variables/form-select-disabled-border-color" as *;
+@use "../variables/form-select-padding-y-sm" as *;
+@use "../variables/form-select-padding-x-sm" as *;
+@use "../variables/form-select-font-size-sm" as *;
+@use "../variables/form-select-border-radius-sm" as *;
+@use "../variables/form-select-padding-y-lg" as *;
+@use "../variables/form-select-padding-x-lg" as *;
+@use "../variables/form-select-font-size-lg" as *;
+@use "../variables/form-select-border-radius-lg" as *;
+@use "../variables/enable-dark-mode" as *;
+@use "../variables/dark/form-select-indicator-dark" as *;
+@use "../mixins/color-mode" as *;
+@use "../mixins/border-radius" as *;
+@use "../mixins/box-shadow" as *;
+@use "../mixins/transition" as *;
+@use "../functions/escape-svg" as *;
+@use "../vendor/rfs" as *;
+
 // Select
 //
 // Replaces the browser default select with a custom one, mostly pulled from

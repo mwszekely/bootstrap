@@ -1,3 +1,16 @@
+@use "./variables/prefix" as *;
+@use "./variables/alert-padding-x" as *;
+@use "./variables/alert-padding-y" as *;
+@use "./variables/alert-margin-bottom" as *;
+@use "./variables/alert-border-width" as *;
+@use "./variables/alert-border-radius" as *;
+@use "./variables/alert-link-font-weight" as *;
+@use "./variables/alert-dismissible-padding-r" as *;
+@use "./variables/stretched-link-z-index" as *;
+@use "./variables/theme-colors" as *;
+@use "./mixins/border-radius" as *;
+@use "sass:map";
+
 //
 // Base styles
 //
@@ -57,7 +70,7 @@
 
 // scss-docs-start alert-modifiers
 // Generate contextual modifier classes for colorizing the alert
-@each $state in map-keys($theme-colors) {
+@each $state in map.keys($theme-colors) {
   .alert-#{$state} {
     --#{$prefix}alert-color: var(--#{$prefix}#{$state}-text-emphasis);
     --#{$prefix}alert-bg: var(--#{$prefix}#{$state}-bg-subtle);

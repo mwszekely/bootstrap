@@ -1,3 +1,26 @@
+@use "./variables/prefix" as *;
+@use "./variables/zindex-offcanvas" as *;
+@use "./variables/offcanvas-horizontal-width" as *;
+@use "./variables/offcanvas-vertical-height" as *;
+@use "./variables/offcanvas-padding-x" as *;
+@use "./variables/offcanvas-padding-y" as *;
+@use "./variables/offcanvas-color" as *;
+@use "./variables/offcanvas-bg-color" as *;
+@use "./variables/offcanvas-border-width" as *;
+@use "./variables/offcanvas-border-color" as *;
+@use "./variables/offcanvas-box-shadow" as *;
+@use "./variables/offcanvas-transition-duration" as *;
+@use "./variables/offcanvas-title-line-height" as *;
+@use "./variables/grid-breakpoints" as *;
+@use "./variables/zindex-offcanvas-backdrop" as *;
+@use "./variables/offcanvas-backdrop-bg" as *;
+@use "./variables/offcanvas-backdrop-opacity" as *;
+@use "./mixins/breakpoints" as *;
+@use "./mixins/box-shadow" as *;
+@use "./mixins/transition" as *;
+@use "./mixins/backdrop" as *;
+@use "sass:map";
+
 // stylelint-disable function-disallowed-list
 
 %offcanvas-css-vars {
@@ -17,7 +40,7 @@
   // scss-docs-end offcanvas-css-vars
 }
 
-@each $breakpoint in map-keys($grid-breakpoints) {
+@each $breakpoint in map.keys($grid-breakpoints) {
   $next: breakpoint-next($breakpoint, $grid-breakpoints);
   $infix: breakpoint-infix($next, $grid-breakpoints);
 
@@ -26,7 +49,7 @@
   }
 }
 
-@each $breakpoint in map-keys($grid-breakpoints) {
+@each $breakpoint in map.keys($grid-breakpoints) {
   $next: breakpoint-next($breakpoint, $grid-breakpoints);
   $infix: breakpoint-infix($next, $grid-breakpoints);
 

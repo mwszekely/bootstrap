@@ -1,3 +1,22 @@
+@use "../variables/form-floating-height" as *;
+@use "../variables/form-floating-line-height" as *;
+@use "../variables/form-floating-padding-y" as *;
+@use "../variables/form-floating-padding-x" as *;
+@use "../variables/prefix" as *;
+@use "../variables/form-floating-label-opacity" as *;
+@use "../variables/input-border-width" as *;
+@use "../variables/form-floating-transition" as *;
+@use "../variables/form-floating-input-padding-t" as *;
+@use "../variables/form-floating-input-padding-b" as *;
+@use "../variables/form-floating-label-transform" as *;
+@use "../variables/form-floating-label-height" as *;
+@use "../variables/input-bg" as *;
+@use "../variables/input-border-radius" as *;
+@use "../variables/input-disabled-bg" as *;
+@use "../variables/form-floating-label-disabled-color" as *;
+@use "../mixins/transition" as *;
+@use "../mixins/border-radius" as *;
+
 .form-floating {
   position: relative;
 
