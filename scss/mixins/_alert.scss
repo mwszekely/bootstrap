@@ -1,4 +1,6 @@
 @use "../variables/prefix" as *;
+@use "../variables/enable-gradients" as *;
+@use "../functions/shade-color" as *;
 @use "../mixins/deprecate" as *;
 @use "../functions/shade-color" as *;
 
